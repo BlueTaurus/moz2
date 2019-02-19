@@ -1,0 +1,7 @@
+{
+    "model_path":"/home/muhammadali/current-TTS/TTS-master/keep/TTS-dev-tweb-February-10-2019_02+27AM-dea195f",
+    "model_name":"checkpoint_65000.pth.tar",
+    "model_config":"config.json",
+    "port": 5002,
+    "use_cuda": true
+}
