@@ -26,7 +26,7 @@
     },
 
     "embedding_size": 256,
-    "text_cleaner": "basic_cleaner",
+    "text_cleaner": "basic_cleaners",
     "epochs": 100000,
     "lr": 0.001,
     "lr_decay": false,
