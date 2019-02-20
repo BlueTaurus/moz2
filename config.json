@@ -37,7 +37,7 @@
     "r": 5,
     "wd": 0.000001,
     "checkpoint": true,
-    "save_step": 5000,
+    "save_step": 1,
     "print_step": 10,
     "tb_model_param_stats": true,     // true, plots param stats per layer on tensorboard. Might be memory consuming, but good for debugging. 
 
