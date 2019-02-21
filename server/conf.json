@@ -1,5 +1,5 @@
 {
-    "model_path":"/home/muhammadali/current-TTS/TTS2/TTS-master/keep/TTS-dev-tweb-February-21-2019_09+49PM-0b323c7",
+    "model_path":"/home/muhammadali/current-TTS/TTS2/TTS-master/keep/TTS-dev-tweb-February-21-2019_10+09PM-68d7d2b",
     "model_name":"checkpoint_2.pth.tar",
     "model_config":"config.json",
     "port": 5002,
