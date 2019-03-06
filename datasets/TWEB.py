@@ -28,7 +28,7 @@ class TWEBDataset(Dataset):
                  power,
                  min_seq_len=0):
 
-        with open(csv_file, "r") as f:
+        with open(csv_file, "r", encoding='utf-8') as f: #chnage
             self.frames = [line.split('\t') for line in f]
         self.root_dir = root_dir
         self.outputs_per_step = outputs_per_step

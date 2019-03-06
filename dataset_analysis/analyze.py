@@ -44,9 +44,9 @@ def append_data_statistics(meta_data):
 
 def process_meta_data(path):
     meta_data = {}
-
+#change for utf-8
     # load meta data
-    with open(path, 'r') as f:
+    with open(path, 'r',encoding='utf-8') as f:
         data = csv.reader(f, delimiter='|')
         for row in data:
             frames = int(row[2])
@@ -97,7 +97,7 @@ def save_training(file_path, meta_data):
             rows.append(d['row'] + "\n")
 
     random.shuffle(rows)
-    with open(file_path, 'w+') as f:
+    with open(file_path, 'w+', encoding='utf-8') as f:	#change
         for row in rows:
             f.write(row)
 
@@ -161,7 +161,7 @@ def plot_phonemes(train_path, cmu_dict_path, save_path):
 
     phonemes = {}
 
-    with open(train_path, 'r') as f:
+    with open(train_path, 'r',encoding='utf-8') as f:   #change
         data = csv.reader(f, delimiter='|')
         phonemes["None"] = 0
         for row in data:

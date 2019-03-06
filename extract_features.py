@@ -105,18 +105,18 @@ if __name__ == "__main__":
             for item in items:
                 print(" > ", item[1])
                 r.append(extract_mel(item))
-
+#change utf8
         # Save meta data 
         if args.cache_path is not None:
             file_path = os.path.join(CACHE_PATH, "tts_metadata_val.csv")
-            file = open(file_path, "w")
+            file = open(file_path, "w", encoding='utf-8') #change utf8
             for line in r[:args.val_split]:
                 line = "| ".join(line)
                 file.write(line + '\n')
             file.close()
 
             file_path = os.path.join(CACHE_PATH, "tts_metadata.csv")
-            file = open(file_path, "w")
+            file = open(file_path, "w", encoding='utf-8')
             for line in r[args.val_split:]:
                 line = "| ".join(line)
                 file.write(line + '\n')
