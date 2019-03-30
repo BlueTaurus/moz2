@@ -1,6 +1,6 @@
 {
-    "model_path":"/home/muhammadali/current-TTS/TTS2/TTS-master/keep/TTS-dev-tweb-February-27-2019_09+32PM-3cd7e23",
-    "model_name":"checkpoint_70000.pth.tar",
+    "model_path":"/home/muhammadali/current-TTS/TTS2/TTS-master/keep/TTS-dev-tweb-March-06-2019_01+22PM-06e320b",
+    "model_name":"checkpoint_64000.pth.tar",
     "model_config":"config.json",
     "port": 5002,
     "use_cuda": true

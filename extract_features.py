@@ -109,14 +109,14 @@ if __name__ == "__main__":
         # Save meta data 
         if args.cache_path is not None:
             file_path = os.path.join(CACHE_PATH, "tts_metadata_val.csv")
-            file = open(file_path, "w", encoding='utf-8') #change utf8
+            file = open(file_path, "w", encoding='utf-8-sig') #change utf8
             for line in r[:args.val_split]:
                 line = "| ".join(line)
                 file.write(line + '\n')
             file.close()
 
             file_path = os.path.join(CACHE_PATH, "tts_metadata.csv")
-            file = open(file_path, "w", encoding='utf-8')
+            file = open(file_path, "w", encoding='utf-8-sig')
             for line in r[args.val_split:]:
                 line = "| ".join(line)
                 file.write(line + '\n')

@@ -24,6 +24,7 @@ def index():
 @app.route('/api/tts', methods=['GET'])
 def tts():
     text = request.args.get('text')
+	text.encode("utf-8-sig")
     print(" > Model input: {}".format(text))
     data = synthesizer.tts(text)
     return send_file(data, mimetype='audio/wav')
